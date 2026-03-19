@@ -140,8 +140,22 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--hero-gradient);
+    position: relative;
+    overflow: hidden;
     padding-top: 70px;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: var(--hero-gradient);
+    filter: blur(6px);
+    z-index: -1;
 }
 
 .hero-section .subtitle {
