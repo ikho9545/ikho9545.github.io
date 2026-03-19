@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진익호 - 홈페이지</title>
+    <!-- 검색 엔진 최적화(SEO)를 위한 메타 태그 -->
+    <meta name="description" content="자원순환과 진익호의 홈페이지입니다. 인공지능, 경제, 환경, 여행에 관심이 있습니다.">
+    <link rel="stylesheet" href="style.css">
+    <!-- 구글 폰트 (현대적이고 깔끔한 Noto Sans KR 폰트 적용) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (아이콘 사용을 위한 라이브러리) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 상단 네비게이션 바 -->
+    <nav>
+        <div class="nav-container">
+            <h1 class="logo">진익호</h1>
+            <div class="nav-links">
+                <a href="#hero">홈</a>
+                <a href="#about">소개</a>
+                <a href="#experience">경력</a>
+                <a href="#interests">관심분야</a>
+                <a href="#contact">연락처</a>
+            </div>
+            <!-- 다크모드/라이트모드 토글 버튼 -->
+            <button id="theme-toggle" aria-label="테마 변경">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 첫 화면 (히어로 섹션) -->
+        <section id="hero" class="hero-section fade-in">
+            <div class="container">
+                <p class="subtitle">환영합니다</p>
+                <h2 class="title">안녕하세요,<br><span class="highlight">진익호</span>입니다.</h2>
+                <p class="description">신뢰를 바탕으로 더 나은 미래를 만들어갑니다.<br>환경과 자원의 순환, 그리고 새로운 기술의 융합에 관심이 많습니다.</p>
+                <a href="#about" class="btn btn-primary">더 알아보기</a>
+            </div>
+        </section>
+
+        <!-- 자기소개 섹션 -->
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title">자기 소개</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <i class="fas fa-briefcase icon-large"></i>
+                        <h3>소속</h3>
+                        <p class="text-strong">자원순환과</p>
+                        <p>환경과 자원의 올바른 순환을 위해 현장에서 일하고 있습니다.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-robot icon-large"></i>
+                        <h3>활동</h3>
+                        <p class="text-strong">인공지능 동호회 회원</p>
+                        <p>IT 기술과 인공지능이 일상에 가져올 변화에 매력을 느껴 동호회에서 활발히 소통 중입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 경력 타임라인 섹션 -->
+        <section id="experience" class="section bg-secondary fade-in">
+            <div class="container">
+                <h2 class="section-title">경력 타임라인</h2>
+                <div class="timeline">
+                    <!-- 타임라인 아이템 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>인공지능 분야 입문</h3>
+                            <span class="date">현재 진행 중</span>
+                            <p>인공지능 수준은 아직 <strong>발걸음 단계</strong>입니다.<br>새로운 기술의 기초를 다지며 배우고 적용하는 과정에 열정을 쏟고 있습니다.</p>
+                        </div>
+                    </div>
+                    <!-- 타임라인 아이템 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>자원순환과 근무</h3>
+                            <span class="date">진행 중</span>
+                            <p>지속 가능한 미래를 위해 자원 순환 정책과 실무를 다루고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 관심 분야 섹션 -->
+        <section id="interests" class="section fade-in">
+            <div class="container">
+                <h2 class="section-title">관심 분야</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <i class="fas fa-chart-line icon-primary"></i>
+                        <h3>경제</h3>
+                        <p>시장 경제의 올바른 흐름을 읽고 합리적인 가치를 창출하는 데 관심이 많습니다.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-leaf icon-primary"></i>
+                        <h3>환경</h3>
+                        <p>자원순환율을 높이고 지속 가능한 지구를 위한 방안을 깊게 고민합니다.</p>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-plane icon-primary"></i>
+                        <h3>여행</h3>
+                        <p>새로운 도시와 자연 속에서 견문을 넓히며 삶의 영감을 얻습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact" class="section bg-primary text-white fade-in">
+            <div class="container text-center">
+                <h2 class="section-title">연락처</h2>
+                <p>궁금한 점이 있으시거나 함께 나누고 싶은 이야기가 있다면 언제든 연락주세요.</p>
+                <div class="contact-info">
+                    <a href="mailto:ikhoj@daum.net" class="btn btn-outline text-white">
+                        <i class="fas fa-envelope"></i> ikhoj@daum.net
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 하단 영역 (푸터) -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 진익호. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 자바스크립트 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
